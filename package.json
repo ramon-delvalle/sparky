@@ -23,5 +23,7 @@
     "gulp-typescript": "^2.13.6"
   },
   "dependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7"
   }
 }
