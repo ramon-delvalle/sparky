@@ -1,0 +1,27 @@
+{
+  "name": "sparky",
+  "version": "1.0.0",
+  "description": "Example App",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramon-delvalle/sparky.git"
+  },
+  "author": "Ramon Del Valle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramon-delvalle/sparky/issues"
+  },
+  "homepage": "https://github.com/ramon-delvalle/sparky#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-typescript": "^2.13.6"
+  },
+  "dependencies": {
+  }
+}
