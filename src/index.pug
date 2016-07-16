@@ -6,6 +6,12 @@ html(lang="en" data-ng-app="sp")
         meta(http-equiv="X-UA-Compatible", content="IE=edge, chrome=1")
         meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
         base(href="/")
+        // Vendor Styles
+        link(rel="stylesheet", href="vendor/bootstrap/bootstrap.css")
+        link(rel="stylesheet", href="vendor/font-awesome/font-awesome.css")
+        // App Styles
+        link(rel="stylesheet", href="app/app.css")
+        
         // Vendor Scripts
         script(src="vendor/angular/angular.js")        
         script(src="vendor/angular-animate/angular-animate.js")           
@@ -24,6 +30,6 @@ html(lang="en" data-ng-app="sp")
         script(src="app/modules/side-bar/side-bar.directive.js")
         
         
-    body
+    body.container-fluid
         div(data-sp-layout="")
 

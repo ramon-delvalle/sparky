@@ -48,9 +48,19 @@ gulp.task('buildCopyVendors', function () {
         ));
 });
 
+gulp.task('buildCopyVendorFonts', function () {
+    return gulp
+        .src([
+            path.join(nodePath, '/font-awesome/fonts/fontawesome-webfont.*')
+        ])
+        .pipe(gulp.dest(
+            path.join(buildPath, '/fonts')
+        ));
+});
+
 
 
 gulp.task('build', [
     'buildTypescript', 'buildPug', 'buildLess', 
-    'buildCopyVendors'
+    'buildCopyVendors', 'buildCopyVendorFonts' 
 ]);
