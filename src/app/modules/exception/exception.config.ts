@@ -6,12 +6,12 @@ namespace sp {
         $provide.decorator('$exceptionHandler', exceptionHandler)
     }
 
-    exceptionHandler.$inject = ['$delegate'];
-    function exceptionHandler($delegate){
+    exceptionHandler.$inject = ['$delegate', '$log'];
+    function exceptionHandler($delegate, $log){
         return function (exception:any, cause: any) {
             var errorData = { exception: exception, cause: cause };
             $delegate(exception, cause);
-            console.error(exception.message, errorData);
+            $log.error('Error: ' + exception.message, '\nDetails:', errorData);
         }
     }
 
