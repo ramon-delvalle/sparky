@@ -8,7 +8,7 @@ module sp {
         public controllerAs:string = 'vm';
         public templateUrl:string = 'app/modules/layout/layout.html';
 
-        public link: ng.IDirectiveLinkFn = (scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes, ngModel: any) => {
+        public link: ng.IDirectiveLinkFn = (scope: ng.IScope, element: ng.IAugmentedJQuery, attrs: ng.IAttributes, ngModel: ISpLayoutModel) => {
             
         }
     }
