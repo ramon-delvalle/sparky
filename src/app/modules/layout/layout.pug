@@ -1,3 +1,5 @@
 .sp-layout
     header(data-sp-title-bar="", data-title="{{vm.title}}")
-    section
+    section.sp-layout-content 
+        .sp-sidebar(data-sp-side-bar="", data-title="{{vm.sideBarTitle}}")
+        .sp-view(data-ng-view="")
