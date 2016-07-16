@@ -11,6 +11,12 @@ html(lang="en" data-ng-app="sp")
         script(src="vendor/angular-animate/angular-animate.js")           
         // App 
         script(src="app/app.module.js")
+        // Exception
         script(src="app/modules/exception/exception.config.js")
+        // Layout
+        script(src="app/modules/layout/layout.controller.js")
+        script(src="app/modules/layout/layout.directive.js")
+        
     body
+        div(data-sp-layout="")
 
