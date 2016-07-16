@@ -10,6 +10,8 @@ module sp {
 
         public static $inject: string[] = [];
         constructor(){
+            // @TODO: create config
+            this.title = 'Sparky';
         }
 
     }
