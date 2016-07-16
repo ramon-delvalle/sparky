@@ -37,14 +37,14 @@ gulp.task('buildLess', function () {
 });
 
 
-gulp.task('buildCopyVendorScripts', function () {
+gulp.task('buildCopyVendors', function () {
     return gulp
         .src([
             path.join(nodePath, '/angular*/angular*.js'),
             '!' + path.join(nodePath, '/**/*.min.js'),
         ])
         .pipe(gulp.dest(
-            path.join(buildPath, '/vendor/js')
+            path.join(buildPath, '/vendor')
         ));
 });
 
@@ -52,5 +52,5 @@ gulp.task('buildCopyVendorScripts', function () {
 
 gulp.task('build', [
     'buildTypescript', 'buildPug', 'buildLess', 
-    'buildCopyVendorScripts'
+    'buildCopyVendors'
 ]);
